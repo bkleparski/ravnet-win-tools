@@ -2,7 +2,7 @@
 <#
 .SYNOPSIS
     Ravnet Win-Tools — launcher
-    Uruchamiaj przez: irm go.ebartnet.pl/win | iex
+    Uruchamiaj przez: irm go.ebartnet.pl/time | iex
 #>
 
 $menuItems = @(
@@ -14,7 +14,7 @@ function Show-Menu {
     Clear-Host
     Write-Host "================================================" -ForegroundColor Cyan
     Write-Host "   Ravnet Win-Tools dla Windows 11" -ForegroundColor White
-    Write-Host "   https://github.com/bkleparski/ravnet-win-tools" -ForegroundColor DarkGray
+    Write-Host "   github.com/bkleparski/ravnet-win-tools" -ForegroundColor DarkGray
     Write-Host "================================================" -ForegroundColor Cyan
     Write-Host ""
     foreach ($item in $menuItems) {
@@ -35,6 +35,6 @@ do {
             $null = Read-Host
         }
         "0" { Write-Host "Do zobaczenia!" -ForegroundColor Green }
-        default { Write-Host "Nieznana opcja — sprobuj ponownie." -ForegroundColor Red; Start-Sleep -Seconds 1 }
+        default { Write-Host "Nieznana opcja." -ForegroundColor Red; Start-Sleep -Seconds 1 }
     }
 } while ($choice -ne "0")

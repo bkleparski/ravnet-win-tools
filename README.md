@@ -5,7 +5,7 @@ Zestaw skryptow PowerShell do naprawy i konfiguracji **Windows 11**, uruchamiany
 ## Uruchomienie
 
 ```powershell
-irm go.ebartnet.pl/win | iex
+irm go.ebartnet.pl/time | iex
 ```
 
 > **Wymagane:** terminal PowerShell uruchomiony jako **Administrator**.
